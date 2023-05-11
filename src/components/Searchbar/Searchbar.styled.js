@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import { Form as FormikForm } from 'formik';
+import styled from "styled-components"
 
 export const Header = styled.header`
   top: 0;
@@ -19,7 +18,8 @@ export const Header = styled.header`
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
-export const Form = styled(FormikForm)`
+
+export const SearchingForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
@@ -28,7 +28,9 @@ export const Form = styled(FormikForm)`
   border-radius: 3px;
   overflow: hidden;
 `;
-export const SerchButton = styled.button`
+
+export const SearchingFormBtn = styled.button`
+  display: inline-block;
   width: 48px;
   height: 48px;
   border: 0;
@@ -36,18 +38,49 @@ export const SerchButton = styled.button`
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
-  background-color: #fff;
-  &:hover {
+  background-color: cyan;
+
+  &:hover{
     opacity: 1;
   }
 `;
-export const SearchFormButtonLabel = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+
+
+export const BtnLabel = styled.span`
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  width: 32px;
-  height: 32px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 `;
+
+export const SearchingFormInput = styled.input`
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  &::placeholder{
+    font: inherit;
+    font-size: 18px;
+  }
+`;
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@emotion/styled";
 
 export const GalleryItem = styled.li`
   border-radius: 2px;
@@ -6,15 +6,14 @@ export const GalleryItem = styled.li`
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 `;
 
-
-export const ItemImg = styled.img`
-  display: block;
+export const GalleryImage = styled.img`
   width: 100%;
-  height: 260px;
+  height: auto;
+  height: 340px;
   object-fit: cover;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     transform: scale(1.03);
-    cursor: zoom-in;
+    cursor: pointer;
   }
-`
+`;
